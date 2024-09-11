@@ -60,3 +60,21 @@ if (nacimiento >= 1883 && nacimiento <= 1900){
 }else{
     console.log("Generacion Alpha")
 }
+
+let numero;
+
+numero = 2;
+switch (numero) {
+    case 1:
+        System.out.println("Es uno");
+        break;
+    case 2:
+        System.out.println("Es dos");
+        break;
+    case 3:
+        System.out.println("Es tres");
+        break;
+    default:
+        System.out.println("Número no válido");
+        break;
+}
