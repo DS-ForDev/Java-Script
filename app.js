@@ -78,3 +78,56 @@ switch (numero) {
         System.out.println("Número no válido");
         break;
 }
+
+//SWITCH CASA CAMNIO DE MONEDA 
+
+let cantidad;
+let divisa;
+let USD = 4280;
+let GBP = 4728
+let EUR = 5601
+
+
+cantidad = prompt("¿Cuanto dinero quiero cambiar?");
+divisas = prompt("Escoja una opcion entre alguna de la siguientes divisas: USD , EUR, GBP");
+
+switch(divisa.toUpperCase){
+
+    case "USD": console.log(cantidad/USD)
+    break;
+
+    case "GBP": console.log(cantidad/GBP)
+    break;
+
+    case "EUR": console.log(cantidad/EUR)
+    break;
+
+
+    default: console.log("No tenemos esa divisa")
+}
+
+//Ciclos FOR 
+// Incremento
+
+for(let i = 5; i<=15; i++){
+
+    console.log(i)
+
+}
+
+//Decremento
+
+for(let j = 20; j>= 1 ; j-=1){
+    console.log(j);
+}
+
+
+/// Tabla de multiplicar
+
+let tabla;
+
+tabla = prompt("Ingrese la tabla que quiere saber")
+
+for( let i = 1; i <=10; i =+1){
+    console.log(`${tabla} * ${i} = ${(tabla*i)}`)
+}
