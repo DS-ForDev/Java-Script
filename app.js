@@ -131,3 +131,5 @@ tabla = prompt("Ingrese la tabla que quiere saber")
 for( let i = 1; i <=10; i += 1){
     console.log(`${tabla} * ${i} = ${(tabla*i)}`)
 }
+
+
