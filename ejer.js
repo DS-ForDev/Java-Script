@@ -92,7 +92,7 @@ switch(creditos){
 }
 */
 
-//
+//EJERCICIO DE DESCUENTOS SEGUN EL VALOR DE LA COMPRA
 
 let valorcompra;
 let descuentoUno;
