@@ -384,7 +384,7 @@ while (numero <= 10){
 }
 */
 //
-
+/*
 let n = 1;
 let sum = 0;
 
@@ -397,3 +397,57 @@ while (n > 0){
 }
 
 console.log(`La suma de los numeros infresados es ${sum}`)
+*/
+
+// WHILE CON SWITCH 
+
+let opcion;
+
+let estado = true;
+
+let coseno, seno, raiz, numero;
+
+
+while(estado){
+
+opcion = (parseInt(prompt(`SELECCIONE UN OPCION \n 1. Raiz \n 2. Seno de N1 \n 3. Coseno N1 \n 4. Salir`)));
+
+switch(opcion){
+
+case 1: alert("Selecciono Raiz");
+
+numero = (parseFloat(prompt(`INGRESE EL NUMERO PARA CALCULAR LA RAIZ`)));
+
+raiz = Math.sqrt(numero);
+
+alert(`LA RAIZ DE ${numero} ES: ${raiz}`);
+
+break;
+case 2 : alert("Selecciono Seno N1");
+
+numero = (parseFloat(prompt(`INGRESE EL NUMERO PARA CALCULAR EL SENO`)));
+
+seno = Math.sin(numero);
+
+alert(`EL SENO DE ${numero} ES: ${seno}`);
+
+break;
+
+case 3 : alert("Selecciono Coseno N1");
+
+numero = (parseFloat(prompt(`INGRESE EL NUMERO PARA CALCULAR EL COSENO`)));
+
+coseno = Math.cos(numero);
+
+alert(`EL COSENO DE ${numero} ES: ${coseno}`);
+
+break;
+
+case 4: alert("SALIENDO....")
+estado = falso;
+break;
+default:
+    alert("LA OPCION NO EXISTE");
+
+}
+}
