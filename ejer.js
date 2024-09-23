@@ -242,41 +242,58 @@ switch(dia){
 
 }
 */
-/*
+
 //EJECUTA OPERACION SEGUN EL SGINO ESCOGIDO
 
 let numUno;
 let numDos;
 let signo;
-
+while(true){
 numUno = parseInt(prompt("Ingrese el primer valor"));
 signo = prompt("Ingrese el signo con el cual quiere trabajar entre :\n +\n -\n *\n /\n");
 numDos = parseInt(prompt("Ingrese el segundo valor"));
+
+function suma(numUno, numDos){
+    return numUno + numDos;
+}
+
+function resta(numUno, numDos){
+    return numUno - numDos;
+}
+
+function multiplicar(numUno, numDos){
+    return numUno * numDos;
+}
+
+function division(numUno, numDos){
+    return numUno / numDos;
+}
 
 
 switch(signo){
 
     case "+":
-        console.log(`La SUMA de estos dos numeros es ${numUno + numDos}`);
+        alert(`La SUMA de estos dos numeros es ${suma(numUno,numDos)}`);
         break;
 
     case "-":
-        console.log(`La RESTA de estos dos numeros es ${numUno - numDos}`);
+        alert(`La RESTA de estos dos numeros es ${resta(numUno,numDos)}`);
         break;
 
     case "*":
-        console.log(`La MULTIPLICACION de estos dos numeros es ${numUno * numDos}`);
+        alert(`La MULTIPLICACION de estos dos numeros es ${multiplicar(numUno,numDos)}`);
         break;
 
     case "/":
-        console.log(`La DIVISION de estos dos numeros es ${numUno / numDos}`);
+        alert(`La DIVISION de estos dos numeros es ${division(numUno,numDos)}`);
         break;
 
     default:
-        console.log("Los valores que ingresaste son incorrectos")
+        alert("Los valores que ingresaste son incorrectos")
 
 }
-*/
+}
+
 /*
 
 //INGRESANDO UN NUMERO OBTENDREMOS EL MES DEL AÑO  IF ELSE Y SWITCH JUNTOS
@@ -405,7 +422,7 @@ console.log(`La suma de los numeros infresados es ${sum}`)
 */
 
 // WHILE CON SWITCH 
-
+/*
 let opcion;
 
 let estado = true;
@@ -455,4 +472,4 @@ default:
     alert("LA OPCION NO EXISTE");
 
 }
-}
+*/
