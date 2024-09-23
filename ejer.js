@@ -248,7 +248,9 @@ switch(dia){
 let numUno;
 let numDos;
 let signo;
+
 while(true){
+
 numUno = parseInt(prompt("Ingrese el primer valor"));
 signo = prompt("Ingrese el signo con el cual quiere trabajar entre :\n +\n -\n *\n /\n");
 numDos = parseInt(prompt("Ingrese el segundo valor"));
@@ -466,8 +468,9 @@ alert(`EL COSENO DE ${numero} ES: ${coseno}`);
 break;
 
 case 4: alert("SALIENDO....")
-estado = falso;
-break;
+    estado = falso;
+    break;
+
 default:
     alert("LA OPCION NO EXISTE");
 
