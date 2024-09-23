@@ -1,4 +1,9 @@
+//EJERCICIS JAVA SCRIPT
+
+
 /*
+
+
 // EJERCICIO DEL MENU DE UN RESTAURANTE
 let plato;
 
