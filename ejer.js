@@ -244,16 +244,19 @@ switch(dia){
 */
 
 //EJECUTA OPERACION SEGUN EL SGINO ESCOGIDO
-
+/*
 let numUno;
 let numDos;
 let signo;
+let estado = true;
 
-while(true){
+while(estado){ 
 
 numUno = parseInt(prompt("Ingrese el primer valor"));
-signo = prompt("Ingrese el signo con el cual quiere trabajar entre :\n +\n -\n *\n /\n");
+signo = prompt("Ingrese el signo con el cual quiere trabajar entre :\n +\n -\n *\n /\n  \n O para salir utilice el signo ?");
 numDos = parseInt(prompt("Ingrese el segundo valor"));
+
+
 
 function suma(numUno, numDos){
     return numUno + numDos;
@@ -270,7 +273,6 @@ function multiplicar(numUno, numDos){
 function division(numUno, numDos){
     return numUno / numDos;
 }
-
 
 switch(signo){
 
@@ -290,12 +292,18 @@ switch(signo){
         alert(`La DIVISION de estos dos numeros es ${division(numUno,numDos)}`);
         break;
 
+    case "?":
+        alert("Saliendo del programa");
+        estado = false;
+        break;
+
     default:
         alert("Los valores que ingresaste son incorrectos")
 
 }
-}
 
+}
+*/
 /*
 
 //INGRESANDO UN NUMERO OBTENDREMOS EL MES DEL AÑO  IF ELSE Y SWITCH JUNTOS
@@ -476,3 +484,24 @@ default:
 
 }
 */
+
+let numAleatorio = Math.floor(Math.random() * 50) + 1;
+let numeroUsuario = parseInt(prompt("Ingrese un numero entre 1 - 50 para empezar a adivinar"));
+
+while(numeroUsuario !== numAleatorio){
+
+if (numeroUsuario < 1 || numeroUsuario > 50){
+    alert("Escoge un numero entre 1 - 50");
+}else if(numeroUsuario < numAleatorio){
+    alert("No, el numero es mayor");
+}else if(numeroUsuario > numAleatorio){
+    alert("No, el numero es menor");
+}
+
+numeroUsuario = parseInt(prompt("Ingrese un numero entre 1 - 50 para continuar adivinando"));
+
+}
+
+alert("Has adivinado el numero")
+
+
