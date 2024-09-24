@@ -484,7 +484,7 @@ default:
 
 }
 */
-
+/*
 let numAleatorio = Math.floor(Math.random() * 50) + 1;
 let numeroUsuario = parseInt(prompt("Ingrese un numero entre 1 - 50 para empezar a adivinar"));
 
@@ -503,7 +503,7 @@ numeroUsuario = parseInt(prompt("Ingrese un numero entre 1 - 50 para continuar a
 }
 
 alert("Has adivinado el numero")
-
+*/
 // ARREGLOS
 
 
@@ -524,8 +524,8 @@ console.log(estudiantes.unshift("Esmeralda"));
 console.log(estudiantes)
 
 // Añadir elementos en alguna posicion
-
-console.log(estudiantes.splice(2 , 0  , "Sofia"));
+console.log(estudiantes.splice(2, 1));
+//console.log(estudiantes.splice(2 , 0  , "Sofia"));
 
 console.log(estudiantes)
 // Eliminar ultimo
@@ -554,6 +554,23 @@ console.log(estudiantes)
 estudiantes.forEach((est) =>{
 
     console.log(est);
+
+});
+
+let vector = [];
+
+vector[0] = 15;
+vector[1] = 50;
+vector[2] = 70;
+vector[3] = 90;
+
+console.log(vector);
+
+//Recorrer con un forEach
+
+vector.forEach((i) =>{
+
+    console.log(i);
 
 });
 
