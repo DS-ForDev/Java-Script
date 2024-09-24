@@ -504,4 +504,58 @@ numeroUsuario = parseInt(prompt("Ingrese un numero entre 1 - 50 para continuar a
 
 alert("Has adivinado el numero")
 
+// ARREGLOS
+
+
+let estudiantes = ["Laura", "Julian", "Andres", "Oscar", "Paola"];
+
+console.log(estudiantes)
+
+// Añadir un elemento al final 
+
+console.log(estudiantes.push("Ricardo"));
+
+console.log(estudiantes)
+
+// Agrego elementos al inicio
+
+console.log(estudiantes.unshift("Esmeralda"));
+
+console.log(estudiantes)
+
+// Añadir elementos en alguna posicion
+
+console.log(estudiantes.splice(2 , 0  , "Sofia"));
+
+console.log(estudiantes)
+// Eliminar ultimo
+
+console.log(estudiantes.pop());
+
+console.log(estudiantes)
+
+
+// Eliminar el primer elemento
+
+console.log(estudiantes.shift());
+
+console.log(estudiantes)
+
+// Posicion de un elemento
+
+console.log(estudiantes.indexOf("Andres"));
+
+console.log(estudiantes)
+
+// Recorrer el arreglos
+
+// op 1
+
+estudiantes.forEach((est) =>{
+
+    console.log(est);
+
+});
+
+
 
