@@ -506,7 +506,7 @@ alert("Has adivinado el numero")
 */
 // ARREGLOS
 
-
+/*
 let estudiantes = ["Laura", "Julian", "Andres", "Oscar", "Paola"];
 
 console.log(estudiantes)
@@ -550,7 +550,7 @@ console.log(estudiantes)
 // Recorrer el arreglos
 
 // op 1
-
+/*
 estudiantes.forEach((est) =>{
 
     console.log(est);
@@ -574,5 +574,48 @@ vector.forEach((i) =>{
 
 });
 
+//Funcion conlibreria matematica 
+
+function raiz(numero){
+    return Math.sqrt(numero);
+}
+
+console.log(raiz(18));
+
+//Funcion tipo flecha
+
+let raizZ = (numero) => Math.sqrt(numero);
+
+console.log(raizZ(50));
 
 
+//Funcion Normal 
+
+function suma(a,b){
+    return a + b;
+}
+
+console.log(suma(5,10));
+
+// Funcion Flecha con el ejemplo anterior
+
+let sumas = (a, b) => a + b;
+
+console.log(sumas(20, 40));
+*/
+
+//Crear un arreglo y darle valor despues
+
+let num = new Array(Math.floor(Math.random() * 50));
+
+for (let i = 0 ; i < num.length; i++ ){
+
+    num[i] = Math.floor(Math.random() * 50);
+
+}
+
+for (let i = 0 ; i < num.length; i++ ){
+
+    console.log(`${num[i]}`);
+
+}
