@@ -603,7 +603,7 @@ let sumas = (a, b) => a + b;
 
 console.log(sumas(20, 40));
 */
-
+/*
 //Crear un arreglo y darle valor despues
 
 let num = new Array(Math.floor(Math.random() * 50));
@@ -619,3 +619,23 @@ for (let i = 0 ; i < num.length; i++ ){
     console.log(`${num[i]}`);
 
 }
+*/
+
+//Ejercicio Array
+let tamanio = parseInt(prompt("Ingrese la cantidad de estudiantes"));
+let calificaciones = new Array(tamanio);
+let sumar = 0;
+
+for (let i = 0; i < calificaciones.length; i++){
+
+    calificaciones[i] = parseFloat(prompt("Ingrese las notas"));
+    sumar += calificaciones[i];
+}
+
+for(let i = 0; i < calificaciones.length; i++){
+    
+console.log(`Calificacion ${i+1} :  ${calificaciones[i]}`);
+}
+
+console.log(`La suma de las calificaciones es ${sumar}`);
+console.log(`El promedio de las calificaciones es ${sumar/tamanio}`);
