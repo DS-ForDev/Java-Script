@@ -1,3 +1,4 @@
+/*
 console.log("Hola mundo");
 
 let numero1 = 35;
@@ -20,7 +21,7 @@ console.log(suma);
 console.log(direccion);
 
 console.log('Este es el primer valor ' + numero1 + ' el segundo valor es ' + numero2 + ' y la suma de estos dos valores es ' + suma);
-
+*/
 //Literal Template
 //console.log(`El primer valor es ${numero1} y el segundo valor es ${numero2} y la suma de estos dos numeros es ${suma}`);
 //console.log(`El primer valor es ${numero1} y el segundo valor es ${numero2} y la multipicacion de estos dos numeros es ${multiplicacion}`);
