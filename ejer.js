@@ -625,6 +625,7 @@ for (let i = 0 ; i < num.length; i++ ){
 let tamanio = parseInt(prompt("Ingrese la cantidad de estudiantes"));
 let calificaciones = new Array(tamanio);
 let sumar = 0;
+let max = 0;
 
 for (let i = 0; i < calificaciones.length; i++){
 
@@ -635,6 +636,11 @@ for (let i = 0; i < calificaciones.length; i++){
 for(let i = 0; i < calificaciones.length; i++){
     
 console.log(`Calificacion ${i+1} :  ${calificaciones[i]}`);
+
+if (calificaciones[i] > max) {
+    max = calificaciones[i];
+}
+
 }
 
 console.log(`La suma de las calificaciones es ${sumar}`);
