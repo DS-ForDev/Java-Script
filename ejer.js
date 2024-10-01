@@ -620,7 +620,7 @@ for (let i = 0 ; i < num.length; i++ ){
 
 }
 */
-
+/*
 //Ejercicio Array
 let tamanio = parseInt(prompt("Ingrese la cantidad de estudiantes"));
 let calificaciones = new Array(tamanio);
@@ -645,3 +645,69 @@ if (calificaciones[i] > max) {
 
 console.log(`La suma de las calificaciones es ${sumar}`);
 console.log(`El promedio de las calificaciones es ${sumar/tamanio}`);
+*/
+
+class Libro{
+
+    constructor(titulo, autor, paginas){
+
+        this._titulo = titulo;
+        this._autor = autor;
+        this._paginas = paginas;
+
+    }
+
+
+    get titulo(){
+        return this._titulo;
+    }
+
+    set titulo(titulo){
+        this._titulo = titulo;
+    }
+
+    get autor(){
+        return this._autor;
+    }
+
+    set autor(autor){
+        this._autor = autor;
+    }
+
+    get paginas(){
+        return this._paginas;
+    }
+
+    set paginas(paginas){
+        this._paginas = paginas;
+    }
+
+
+mostarInfo(){
+
+    console.log(`El titulo del libro es: ${this._titulo} el autor es: ${this._autor} y tiene ${this._paginas} Paginas`);
+
+}
+
+
+}
+const l1 = new Libro("El relato de un naufrado", "Pepito", "230");
+const l2 = new Libro("EL principito", "Jorge", "180");
+const l3 = new Libro("EL Programador", "Lucia", "430");
+
+console.log(l1.titulo)
+console.log(l2.titulo)
+console.log(l3.titulo)
+
+l1.autor = "Carlos";
+l2.autor = "Pablo";
+l3.autor = "Ana";
+
+
+
+
+l1.mostarInfo()
+l2.mostarInfo()
+l3.mostarInfo()
+
+
