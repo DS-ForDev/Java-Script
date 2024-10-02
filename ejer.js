@@ -646,7 +646,7 @@ if (calificaciones[i] > max) {
 console.log(`La suma de las calificaciones es ${sumar}`);
 console.log(`El promedio de las calificaciones es ${sumar/tamanio}`);
 */
-
+/*
 class Libro{
 
     constructor(titulo, autor, paginas){
@@ -711,3 +711,122 @@ l2.mostarInfo()
 l3.mostarInfo()
 
 
+class Producto{
+
+    constructor(nombre, precio, cantidad){
+
+        this._nombre = nombre;
+        this._precio = precio;
+        this._precio = cantidad;
+        
+    }
+
+    get nombre(){
+        return this._nombre;
+    }
+
+    set nombre(nombre){
+        this._nombre = nombre;
+    }
+
+    get precio(){
+        return this._precio;
+    }
+
+    set precio(precio){
+        this._precio = precio;
+    }
+
+    get cantidad(){
+        return this._cantidad;
+    }
+
+    set cantidad(cantidad){
+        this._cantidad = cantidad;
+    }
+
+    mostrarNombreProducto(){
+        console.log(`El nombre del producto es: ${this._nombre}`);
+    }
+
+    valorTotal(){
+        return this._precio * this._cantidad;
+    }
+
+    modificarCantidad(nuevoCantidad){
+
+        this._cantidad = nuevoCantidad;
+
+        console.log(`La nueva cantidad es: ${this._cantidad}`)
+
+    }
+
+}
+
+const prod1 = new Producto("Mouse", 45000, 5);
+const prod2 = new Producto("Monitor", 1450000, 3);
+
+
+prod1.mostrarNombreProducto();
+prod2.mostrarNombreProducto();
+console.log(` El valor del producto 1 es: ${prod1.valorTotal()}`);
+console.log(` El valor del producto 2 es: ${prod2.valorTotal()}`);
+
+
+prod1.modificarCantidad(8);
+prod2.modificarCantidad(6);
+
+prod1.mostrarNombreProducto();
+prod2.mostrarNombreProducto();
+
+console.log(` El valor del producto 1 es: ${prod1.valorTotal()}`);
+console.log(` El valor del producto 2 es: ${prod2.valorTotal()}`);
+*/
+
+
+
+//OBJETOS  Clave - Valor
+
+let carro1 = {
+
+    marca: "Ford",
+    modelo: "Fiesta",
+    color: "Rojo",
+    anio: "2018",
+    placa: "KYT603",
+    acelerar(){
+        console.log(`Este carro esta acelerando`);
+    }
+
+}
+
+let carro2 = {
+
+    marca: "Renoult",
+    modelo: "Logan",
+    color: "Gris",
+    anio: "2024",
+    placa: "LKJ603",
+    frenar(){
+        return("Este carro esta frenando");
+    }
+
+}
+
+console.log("Datos del carro 1 " , carro1);
+console.log("Datos del carro 2 " , carro2);
+
+console.log(`El color del carro numero uno es: ${carro1.color}`);
+console.log(`El año del carro numero dos es: ${carro2.anio}`);
+
+///Modificar el valor de una caracteristica del objeto
+
+carro1.color = "Negro";
+carro2.marca = "Audi";
+
+
+console.log("Datos del carro 1 " , carro1);
+console.log("Datos del carro 2 " , carro2);
+
+console.log(carro1.acelerar());
+console.log(carro2.frenar());
