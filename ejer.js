@@ -1101,3 +1101,78 @@ function usarTermostato() {
     termostato.bajarTemperatura(); // Baja la temperatura aleatoriamente
     termostato.apagar();          // Apaga el termostato
 }
+
+class Cuenta {
+    constructor() {
+        this._cuentas = new Array(3);  // Array para almacenar cuentas de usuarios
+        this._saldos = new Array(3);   // Array para almacenar saldos de las cuentas
+    }
+
+    // metodos setters y getters
+    setCuenta(index, cuenta) {
+        this._cuentas[index] = cuenta;
+    }
+    getCuenta(index){
+        return this._cuentas[index];
+    }
+    
+    setSaldo(index, saldo){
+        this._saldos[index] = saldo;
+    }
+    getSaldo(index){
+        return this._saldos[index];
+    }
+
+    crearCuenta(){
+        for(let i=0; i < this._cuentas.length; i++){
+            let cuenta = prompt(`Ingrese el nuevo Numero de cuenta: ${i+1}`);
+            let saldo = parseFloat(prompt(`Ingrese el saldo para la nueva cuenta: ${cuenta} `));
+
+            this.setCuenta(i, cuenta);
+            this.setSaldo(i, saldo);
+        }
+    }
+    consultarSaldo(){
+        let cuenta = prompt(`Ingrese el nuevo Numero de cuenta a consultar su saldo:`);
+        let index = this._cuentas.indexOf(cuenta); // BUsca el indice del valor como argumento
+        if(index !== -1){
+            alert(`El saldo de la cuenta: ${cuenta} es de: ${this.getSaldo(index)}`);
+        }else{
+            alert("Cuenta no fue encontrada.");
+        }
+    }
+}
+
+const cuenta = new Cuenta();
+// Menu Interactivo con el usuario
+let opcion;
+do{
+    opcion = parseInt(prompt(` ***** MENU CAJERO BANCAYA ****** 
+        1. Crear cuentas
+        2. Consultas saldos cuenta
+        3. Consignaciones
+        4. Retiros
+        5. Salir`));
+        switch (opcion) {
+            case 1:
+                cuenta.crearCuenta();
+                break;
+            case 2:
+                cuenta.consultarSaldo();
+                break;
+            case 3:
+                
+                break;
+            case 4:
+                
+                break;
+
+            case 5:
+                
+                break;
+        
+            default:
+                alert("Opcion no valida. Intente nuevamente.!")
+                break;
+        }
+}while(opcion !== 5)
